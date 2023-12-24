@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>Uurtsaikh Gundegmaa's Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9522cbdfd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/ulogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Architect</p>
+          <h1>Hi. I'm <span>Uurtsaikh</span><br>from Mongolia</h1>
+        </div>
+    </div>
+  </div>
+ <!-- -----about---- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am an Architect specialized in Design.
+            I am currently working at Residential Apartments
+            in Dundgovi, Mongolia. All the projects in here are
+            done by me and reflect the competence of my skills.
+            If you need<br>to see more work examples or for further
+            information, please do not hesitate to contact me.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Designing</span><br>Make a design look good and creating a functional design 
+                  that meets the clients' needs and adheres to safety rules</li>
+                <li><span>Building and Construction</span><br>Understanding the tools, materials and
+                   methods used in construction from the initial stages to completion</li>
+                <li><span>Softwares</span><br>Revit, CAD, SketchUp, Lumion, Photoshop</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Jun 2022-Nov 2022</span><br>Technical Architect at Plantech Design Limited</li>
+                <li><span>Feb 2021-Jun 2021</span><br>Architect at Gandirs LLC</li>
+                <li><span>2019-2022</span><br>Pentagram Architecture LLC</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020</span><br>Construction Quantity Surveyor at Mongolian Budget Association</li>
+                <li><span>2015-2020</span><br>Bachelor of Architecture at Mongolian University of Science and Technology</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+ <!----------services---------> 
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-compass-drafting"></i>
+        <h2>Master Plan</h2>
+        <p></p>
+           <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>Architecture</h2>
+        <p></p>
+           <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-city"></i>
+        <h2>Interior/Exterior design</h2>
+        <p></p>
+           <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!-- ------portfolio--------- -->
+ <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="works/03.jpg">
+        <div class="layer">
+          <h3>Zaisan Town Apartment</h3>
+          <p>7 ailin tansag zeregleliin penthouse</p>
+          <a href="#zaisan"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/dar2.jpg">
+        <div class="layer">
+          <h3>Darkhan Apartment</h3>
+          <p>9 floor with garage 2 block apartment at Darkhan City</p>
+          <a href="#darkhan"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/ar2.jpg">
+        <div class="layer">
+          <h3>Happy Villa</h3>
+          <p>Town houses at Artsat. 10 single houses</p>
+          <a href="#villa"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/in2.jpg">
+        <div class="layer">
+          <h3>3 Bedroom Interior Design</h3>
+          <p>interior design</p>
+          <a href="#interior"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/M1.jpg">
+        <div class="layer">
+          <h3>Model</h3>
+          <p>4 blocks which 3 of them apartments and also with museum</p>
+          <a href="#model"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/yarmag1.jpg">
+        <div class="layer">
+          <h3>Happy Apartment</h3>
+          <p>16 floor aprtments</p>
+          <a href="#yarmag"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/chem02.jpg">
+        <div class="layer">
+          <h3>Hospital</h3>
+          <p>located in choir aimag</p>
+          <a href="#hospital"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="works/chantsal1.jpg">
+        <div class="layer">
+          <h3>office</h3>
+          <p>located in dundgobi province</p>
+          <a href="#office"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#details" class="btn">See More</a>
+  </div>
+ </div>
+
+<!-- ---------contact--------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> urtskh@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>+976 80448877</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/urtskh/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/urtskh/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/uurtsaikh-gundegmaa-960119198/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="works/09-09-sketch darkhan.pdf" download class="btn btn2">Download Sketch File</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Uuree</p>
+  </div>
+</div>
+
+<!-- ---------details--------- -->
+<div id="details">
+  <div class="container">
+    <div class="tab-titles">
+      <p class="tab-links active-link" onclick="opentab('zaisan')">Zaisan Penthouse</p>
+      <p class="tab-links"onclick="opentab('darkhan')">Darkhan Apartment</p>
+      <p class="tab-links"onclick="opentab('villa')">Happy Villa</p>
+      <p class="tab-links"onclick="opentab('interior')">Interior Design</p>
+      <p class="tab-links"onclick="opentab('model')">Model</p>
+      <p class="tab-links"onclick="opentab('yarmag')">Happy Residence</p>
+      <p class="tab-links"onclick="opentab('hospital')">Hospital</p>
+      <p class="tab-links"onclick="opentab('office')">Office</p>
+    </div>
+    <div class="tab-contents active-tab" id="zaisan">
+      <div class="content">
+        <img src="works/01.png">
+        <img src="works/02.jpg">
+        <img src="works/04.jpg">
+        <img src="works/05.jpg">
+        <img src="works/06.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="darkhan">
+      <div class="content">
+        <img src="works/dar2.jpg">
+        <img src="works/dar3.jpg">
+        <img src="works/dar1.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="villa">
+      <div class="content">
+        <img src="works/ar1.jpg">
+        <img src="works/ar3.jpg">
+        <img src="works/ar4.jpg">
+        <img src="works/ar5.jpg">
+        <img src="works/ar6.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="interior">
+      <div class="content">
+        <img src="works/interiorplan.png">
+        <img src="works/in11.jpg">
+        <img src="works/in1.jpg">
+        <img src="works/in12.jpg">
+        <img src="works/in3.jpg">
+        <img src="works/in5.jpg">
+        <img src="works/in4.jpg">
+        <img src="works/in6.jpg">
+        <img src="works/in7.jpg">
+        <img src="works/in8.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="model">
+      <div class="content">
+        <img src="works/M3.jpg">
+        <img src="works/M1.jpg">
+        <img src="works/M8.jpg">
+        <img src="works/M4.jpg">
+        <img src="works/M5.jpg">
+        <img src="works/M6.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="yarmag">
+      <div class="content">
+        <img src="works/yarmag4.JPG">
+        <img src="works/yarmag3.jpg">
+        <img src="works/yarmag2.jpg">
+        <img src="works/yarmag5.jpg">
+        <img src="works/yarmag6.jpg">
+        <img src="works/yarmag7.jpg">
+        <img src="works/yarmag8.jpg">
+        <img src="works/yarmag9.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="hospital">
+      <div class="content">
+        <img src="works/chem01.jpg">
+        <img src="works/chem02.jpg">
+        <img src="works/chem03.jpg">
+        <img src="works/chem04.jpg">
+        <img src="works/chem05.jpg">
+        <img src="works/chem06.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    <div class="tab-contents active-tab" id="office">
+      <div class="content">
+        <img src="works/chantsa3.jpg">
+        <img src="works/chantsa2.jpg">
+        <img src="works/chantsa4.jpg">
+        <img src="works/chantsa5.jpg">
+        <a href="#details" class="btn">Back</a>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+
+var sidemenu = document.getElementById("sidemenu")
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "-200px";
+}
+
+  </script>
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwlRM6t3YDpiPCtcZQ88c4NaZ-d507wQNPjVSKgAOX9XF4wy1R5qOWc0uuMeswpmasx5g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        serTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
